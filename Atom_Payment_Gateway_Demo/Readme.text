@@ -1,0 +1,12 @@
+Hello Guys,
+
+This document will hemp you to integrate Atom Payment in your Java project.
+
+1) reqHashKey = KEY123657234 (for UAT server/for live server contact to Atom team)
+2) respHashKey = KEYRESP123657234 (for UAT server/for live server contact to Atom team)
+3) Make a request URL with signature.
+4) Make return URL when payment will completed; it will redirect to your portal with some values like Transaction No. and Payment status etc.
+5) Save data to database.
+
+If you have any query then find attached document of atom atomPaynetzAPI.PDF
+
