@@ -86,11 +86,11 @@ public class AtomController {
                                                         @QueryParam("amt") final String amt,
                                                         @QueryParam("udf3") final String udf3,  // Mobile Number
                                                         @QueryParam("merchant_id") final String merchant_id,
-                                                        @QueryParam("udf1") final String udf1,  //TenantName
+                                                        @QueryParam("udf1") final String udf1,  //Name
                                                         @QueryParam("udf2") final String udf2,   //emailId
-                                                        @QueryParam("udf4") final String udf4,  //tenantAddress
-                                                       // @QueryParam("udf5") final String udf5,  //tenantId
-                                                        @QueryParam("udf9") final String udf9,  //tenantId
+                                                        @QueryParam("udf4") final String udf4,  //Address
+                                                       // @QueryParam("udf5") final String udf5,  
+                                                        @QueryParam("udf9") final String udf9,  
                                                         @QueryParam("auth_code") final String auth_code,
                                                         @QueryParam("discriminator") final String discriminator,    //Type of Payment NB- Net Banking,CC-Credit Card, DC- Debit Card, IM-IMPS, MX -American Express Cards
                                                         @QueryParam("mer_txn") final String mer_txn,
