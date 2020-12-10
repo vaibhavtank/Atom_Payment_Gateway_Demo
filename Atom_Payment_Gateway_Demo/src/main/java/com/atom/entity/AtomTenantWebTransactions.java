@@ -1,6 +1,6 @@
 package com.atom.entity;
 
-public class AtomTenantWebTransactions {
+public class AtomWebTransactions {
 
     private Long  id;
 
@@ -60,11 +60,11 @@ public class AtomTenantWebTransactions {
 
     private String hostName;
 
-    private String tenantContactNo;
+    private String merchantContactNo;
 
-    private String tenantAddress;
+    private String merchantAddress;
 
-    private String tenantName;
+    private String merchantName;
 
     private Long packageId;
 
@@ -304,28 +304,28 @@ public class AtomTenantWebTransactions {
         this.hostName = hostName;
     }
 
-    public String getTenantContactNo() {
-        return tenantContactNo;
+    public String getMerchantContactNo() {
+        return merchantContactNo;
     }
 
-    public void setTenantContactNo(String tenantContactNo) {
-        this.tenantContactNo = tenantContactNo;
+    public void setMerchantContactNo(String merchantContactNo) {
+        this.merchantContactNo = merchantContactNo;
     }
 
-    public String getTenantAddress() {
-        return tenantAddress;
+    public String getMerchantAddress() {
+        return merchantAddress;
     }
 
-    public void setTenantAddress(String tenantAddress) {
-        this.tenantAddress = tenantAddress;
+    public void setMerchantAddress(String merchantAddress) {
+        this.merchantAddress = merchantAddress;
     }
 
-    public String getTenantName() {
-        return tenantName;
+    public String getMerchantName() {
+        return merchantName;
     }
 
-    public void setTenantName(String tenantName) {
-        this.tenantName = tenantName;
+    public void setMerchantName(String merchantName) {
+        this.merchantName = merchantName;
     }
 
     public Long getPackageId() {
