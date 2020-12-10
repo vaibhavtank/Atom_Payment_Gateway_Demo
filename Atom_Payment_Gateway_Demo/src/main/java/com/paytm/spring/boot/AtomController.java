@@ -21,7 +21,7 @@ import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import org.xml.sax.SAXException;
 
-import com.atom.entity.AtomTenantWebTransactions;
+import com.atom.entity.AtomWebTransactions;
 import com.atom.enums.PaymentType;
 import com.atom.utill.CommonUtil;
 
@@ -76,7 +76,7 @@ public class AtomController {
     }
 	
 	@RequestMapping(value = "/atom-paymentws", method = RequestMethod.POST)
-    public ModelAndView register(@ModelAttribute("command") AtomTenantWebTransactions atomWebTransactions,final HttpSession session,final RedirectAttributes redirectAttributes,
+    public ModelAndView register(@ModelAttribute("command") AtomWebTransactions atomWebTransactions,final HttpSession session,final RedirectAttributes redirectAttributes,
                                                         @QueryParam("date") final String date,
                                                         @QueryParam("surcharge") final String surcharge,
                                                         @QueryParam("CardNumber") final String CardNumber,
@@ -128,7 +128,7 @@ public class AtomController {
 	                    map.put("atomTransactionNo", atomWebTransactions.getIpg_txn_id());
 	                    map.put("paymentMode", paymentMode);
 	                    map.put("amount", atomWebTransactions.getAmount());
-	                    map.put("customerName", atomWebTransactions.getTenantName());
+	                    map.put("customerName", atomWebTransactions.getMerchantName());
 	                    map.put("emailId", atomWebTransactions.getEmailId());
 	                    return new ModelAndView("success.jsp", map);
 	                }
