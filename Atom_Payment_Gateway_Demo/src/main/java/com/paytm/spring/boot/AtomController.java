@@ -120,7 +120,7 @@ public class AtomController {
 	                    paymentMode = "American Express";
 	                }
 	            /*redirectAttributes.addFlashAttribute(Constants.MESSAGE,
-	                    messageConfig.getMessage("msg.atomtenantpymt-1"));*/
+	                    messageConfig.getMessage("msg.atommerchantpymt-1"));*/
 	                if (atomWebTransactions != null) {
 	                    map.put("merchantName", "abc");
 	                    map.put("merchantSite", "beepcabs.com");
@@ -136,7 +136,7 @@ public class AtomController {
 	            } else {
 	                return new ModelAndView("failure.jsp");
 	            /*redirectAttributes.addFlashAttribute(Constants.ERROR_MESSAGE,
-	                    messageConfig.getMessage("msg.atomtenantpymt-2"));*/
+	                    messageConfig.getMessage("msg.atommerchantpymt-2"));*/
 	            }
 
 	        }else {
